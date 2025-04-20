@@ -1,6 +1,10 @@
-# Roblox Lifting Simulator Anti-AFK Script
+# Roblox Lifting Simulator Auto-Clicker & Anti-AFK Script
 
-This AutoHotkey script prevents Roblox from detecting inactivity in Lifting Simulator by simulating random key presses and mouse clicks when you're away from the keyboard.
+This AutoHotkey script serves two main purposes:
+1. **Auto-Clicker**: Automatically performs mouse clicks at random intervals to help with repetitive clicking tasks in Lifting Simulator
+2. **Anti-AFK System**: Prevents Roblox from detecting inactivity by simulating random key presses and movements
+
+The script uses randomized timing and movement patterns to appear more human-like and avoid detection while you're away from the keyboard.
 
 ## About This Project
 
@@ -54,6 +58,51 @@ The creator's opinion: Lifting Simulator is a repetitive game that primarily inv
 - **F9**: Toggle between ARMED and DISABLED states
 - **F10**: Toggle the on-screen HUD
 - **Pause**: Suspend the script entirely
+
+## Configuration
+
+You can customize the script's behavior by modifying the values in the `CONFIGURATION` section at the top of the script. Here's what each setting does:
+
+| Setting | Default Value | Description |
+|---------|---------------|-------------|
+| `WaitTime` | 5000 | Time in milliseconds of inactivity before automation starts (5 seconds) |
+| `TargetWin` | "Roblox" | Part of the window title that identifies the game window |
+| `Debug` | true | HUD visibility (can be toggled with F10) |
+| `ClickMin` | 100 | Minimum click interval in milliseconds (0.1 seconds) |
+| `ClickMax` | 300 | Maximum click interval in milliseconds (0.3 seconds) |
+| `MoveMin` | 60000 | Minimum time between movement sequences in milliseconds (60 seconds) |
+| `MoveMax` | 90000 | Maximum time between movement sequences in milliseconds (90 seconds) |
+| `MouseThresh` | 10 | Pixel threshold for mouse movement that stops automation |
+| `BlackoutOffset` | 100 | Millisecond offset for weapon switching click blackout |
+| `MovementKeyHoldMin` | 400 | Minimum time to hold movement keys (WASD) in milliseconds |
+| `MovementKeyHoldMax` | 800 | Maximum time to hold movement keys (WASD) in milliseconds |
+| `WeaponKeyHoldMin` | 50 | Minimum time to hold weapon keys (1,2) in milliseconds |
+| `WeaponKeyHoldMax` | 100 | Maximum time to hold weapon keys (1,2) in milliseconds |
+| `KeyPauseDuration` | 50 | Pause between key actions in milliseconds |
+
+### How to Modify Configuration
+
+1. Open the `Roblox-LifftingSimulator.ahk` file in a text editor:
+   - Right-click on the file
+   - Select "Edit" or "Edit with Notepad"
+   - Alternatively, you can open Notepad first (Start menu > Notepad), then go to File > Open and navigate to the script file
+
+2. Locate the `CONFIGURATION` section at the top of the file (it should look like this):
+   ```
+   ; ────────────────────────────────────────────────────────────────
+   ; CONFIGURATION
+   ; ────────────────────────────────────────────────────────────────
+   WaitTime  := 5000             ; ms inactivity before automation starts (5 s)
+   TargetWin := "Roblox"         ; part of window title that identifies the game
+   Debug     := true             ; HUD on/off (F10 toggles)
+   ```
+
+3. Change the values as needed (only modify the numbers, not the variable names)
+4. Save the file (File > Save or Ctrl+S)
+5. Close Notepad
+6. Restart the script if it's already running
+
+For example, to make the script wait longer before starting automation, you could change `WaitTime := 5000` to `WaitTime := 10000` to make it wait 10 seconds instead of 5.
 
 ## How It Works
 

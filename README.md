@@ -70,3 +70,23 @@ When in the RUNNING state, the script:
 - Monitors for user activity to automatically disable itself
 
 Any mouse movement or keyboard input from the user will automatically return the script to the ARMED state.
+
+## Support the Developer
+
+If you find this script useful, consider buying me a coffee!
+
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://buymeacoffee.com/dkmaker)
+
+## License
+
+This project is released under the MIT License. This means:
+
+- You can use it for any purpose, including commercial use
+- You can modify, distribute, or sell it
+- You must include the original copyright notice and license in any copy of the software/source
+- You must give credit to the original author (attribution)
+- The software is provided "as is" with no warranties
+
+See the [LICENSE](LICENSE) file for the full text of the MIT License.
+
+**Note:** Remember to update the LICENSE file with your name in place of "[YOUR NAME]".

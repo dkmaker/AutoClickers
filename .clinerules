@@ -1,0 +1,11 @@
+# Description
+
+The project is a autohotkey script that runs with Autohotkey V2
+
+Its intended to prevent roblox from quitting when no key is pressed it is intended to be as random as possible
+
+# Requirements
+
+- The script must never use timers
+- The script must never use delay
+- The script must be written for AutoHotkey version 2

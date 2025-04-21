@@ -137,5 +137,3 @@ This project is released under the MIT License. This means:
 - The software is provided "as is" with no warranties
 
 See the [LICENSE](LICENSE) file for the full text of the MIT License.
-
-**Note:** Remember to update the LICENSE file with your name in place of "[YOUR NAME]".
